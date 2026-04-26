@@ -5,7 +5,7 @@ import sys
 # This line is for running `flask run` from the `backend` directory
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from flask import Flask, send_from_directory, session
+from flask import Flask, send_from_directory
 from flask_cors import CORS
 from src.routes.auth import auth_bp
 from src.routes.products import products_bp
