@@ -49,3 +49,8 @@ CREATE TABLE Payments (
     payment_date TEXT NOT NULL,
     FOREIGN KEY (sale_id) REFERENCES Sales (sale_id)
 );
+
+-- Indices for performance optimization
+CREATE INDEX idx_sales_sale_date ON Sales(sale_date);
+CREATE INDEX idx_saleitems_sale_id ON SaleItems(sale_id);
+CREATE INDEX idx_payments_sale_id ON Payments(sale_id);
