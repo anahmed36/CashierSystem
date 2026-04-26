@@ -52,4 +52,4 @@ def serve(path):
 if __name__ == '__main__':
     # Using '0.0.0.0' makes it accessible from your network.
     # debug=True enables auto-reloading and should NOT be used in production.
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=False)
